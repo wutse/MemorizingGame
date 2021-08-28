@@ -1,0 +1,68 @@
+#header .title img {
+    max-width: 3em;
+}
+
+#header .score {
+  margin: 0;
+  color: #6c90ac;
+}
+
+#header .tried {
+    margin-top: 0;
+}
+
+.cardrow {
+  height: 25%;
+  margin-bottom: 2px;
+}
+
+.card {
+  width: 7%; /* 每個 item 分配容器寬度 */
+  height: 100%;
+  border: 2px solid #e0e0e0;
+}
+
+.fliped {
+    border: 2px solid;
+    border-color: crimson;
+}
+
+.paired {
+    border: 2px solidx;
+    border-color: blue;
+}
+
+.wrong {
+  animation-name: wrongAnimation;
+  animation-duration: 0.2s;
+  animation-iteration-count: 5;
+}
+
+@keyframes wrongAnimation {
+  to {
+    border: 2px solid #ffd54f;
+  }
+}
+
+/** Game finished **/
+.completed {
+  position: absolute;
+  z-index: 999;
+  top: 33vh;
+  background-color: RGBA(232, 246, 254, 0.8);
+  width: 100vw;
+  padding: 50px 0;
+}
+
+.completed > p {
+  font-size: 1.5em;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+.completed > p:first-child {
+  font-size: 3em;
+  font-weight: 700;
+  color: #758d9a;
+}
